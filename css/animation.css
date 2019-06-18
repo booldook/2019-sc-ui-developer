@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+body {display: flex; justify-content: center; align-items: center;}
+.wrap {position: absolute; top:10px;}
+/* transition-property(속성) | transition-delay(지연속도) | transition-duration(속도) | transition-timing-function(움직임값) */
+/* https://www.w3schools.com/css/css3_transitions.asp */
+/*.box {width: 200px; height: 200px; background-color: red; transition: all 2s; transition-timing-function: ease-in;}*/
+
+
+/* animation-name | animation-direction | animation-timing-function | animation-delay | animation-duration | animation-iteration-count | animation-play-state */
+/*https://www.w3schools.com/css/css3_animations.asp*/
+.box {width: 200px; height: 200px; background-color: red; animation-duration: 1s; animation-timing-function: linear; animation-iteration-count: infinite; animation-direction: alternate; animation-name: ani1; animation-play-state: paused;}
+
+@keyframes ani1 {
+	0% {transform: translateX(0);}
+	100% {transform: translateX(400px)  scale(1.5);}
+}
+
+
+/* wrap-rt */
